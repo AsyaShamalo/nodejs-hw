@@ -11,7 +11,7 @@ import { errors } from 'celebrate';
 
 import authRoutes from './routes/authRoutes.js';
 import notesRoutes from './routes/notesRoutes.js';
-import userRoutes from './routes/userRoutes';
+import userRoutes from './routes/userRoutes.js';
 import cookieParser from 'cookie-parser';
 
 const app = express();
