@@ -4,7 +4,12 @@ import { Schema, model  } from "mongoose";
 const userSchema = new Schema ({
   username: { type: String, trim: true },
   email: { type: String, require: true, unique: true, trim: true },
-  password: { type: String, require: true}
+  password: { type: String, require: true },
+  avatar: {
+    type: String,
+    require: false,
+    default: "https://ac.goit.global/fullstack/react/default-avatar.jpg"
+  },
 },
   { timestamps: true, versionKey: false }
 );
