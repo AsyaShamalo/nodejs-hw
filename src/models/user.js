@@ -7,7 +7,7 @@ const userSchema = new Schema ({
   password: { type: String, required: true },
   avatar: {
     type: String,
-    require: false,
+    required: false,
     default: "https://ac.goit.global/fullstack/react/default-avatar.jpg"
   },
 },
